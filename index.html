@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="reset.css">
+<style>
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  padding-top: 10vh;
+  color: white;
+  text-align: center;
+}
+
+.mb_parallax_container {
+  height: 100vh;
+  width: 100vw;
+  border-bottom: 10px solid black;
+  padding-top: 20vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mb_parallax_overlay {
+  height: 60vh;
+  width: 60vw;
+  margin: auto;
+  background-color: black;
+  opacity: .9;
+}
+
+
+#mb_parallax_one {
+  background-image: url(https://picsum.photos/900/300/);
+}
+
+#mb_parallax_two {
+  background-image: url(https://picsum.photos/800/300/);
+}
+
+#mb_parallax_three {
+  background-image: url(https://picsum.photos/700/300/);
+}
+</style>
+</head>
+<body>
+
+  <div class="mb_parallax_container" id="mb_parallax_one">
+    <div class="mb_parallax_overlay">
+      <h1>
+        Parallax background with overlay
+      </h1>
+    </div>
+  </div>
+  
+  <div class="mb_parallax_container" id="mb_parallax_two">
+    <div class="mb_parallax_overlay"></div>
+  </div>
+  
+  <div class="mb_parallax_container" id="mb_parallax_three">
+    <div class="mb_parallax_overlay">
+      <h2>
+        A pen by
+        <a href=https://"www.marcbarbeau.com">
+          Marc Barbeau
+        </a>
+      </h2>
+    </div>
+  </div>
+
+</body>
+</html>
